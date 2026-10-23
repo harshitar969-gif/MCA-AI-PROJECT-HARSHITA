@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Student Predictor - MCA Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 AI Student Predictor</h1>
+        <p class="subtitle">MCA Project | AI + MySQL + Python</p>
+
+        <form id="studentForm">
+            <label>Student Name:</label>
+            <input type="text" id="name" placeholder="Ex: Harshita" required>
+
+            <label>Attendance (%):</label>
+            <input type="number" id="attendance" placeholder="0 to 100" min="0" max="100" required>
+
+            <label>Assignment Marks (out of 20):</label>
+            <input type="number" id="assignment" placeholder="0 to 20" min="0" max="20" required>
+
+            <label>Internal Marks (out of 30):</label>
+            <input type="number" id="internal" placeholder="0 to 30" min="0" max="30" required>
+
+            <label>Study Hours Per Day:</label>
+            <input type="number" id="study" placeholder="1 to 10 hours" min="1" max="10" required>
+
+            <button type="submit">Predict Result 🔮</button>
+        </form>
+
+        <div id="resultBox" class="result-box hidden">
+            <h3>🤖 AI Prediction:</h3>
+            <p id="resultText"></p>
+            <p id="perText"></p>
+        </div>
+
+        <p class="footer">Made by Harshita | MCA 2nd Sem</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
